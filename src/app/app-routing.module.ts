@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'cuadrados-medios',
+    loadChildren: () => import('./cuadrados-medios/cuadrados-medios.module').then( m => m.CuadradosMediosPageModule)
+  },
+  {
+    path: 'productos-medios',
+    loadChildren: () => import('./productos-medios/productos-medios.module').then( m => m.ProductosMediosPageModule)
+  },
+  {
+    path: 'congruencial-multiplicativo',
+    loadChildren: () => import('./congruencial-multiplicativo/congruencial-multiplicativo.module').then( m => m.CongruencialMultiplicativoPageModule)
+  },
+  {
+    path: 'congruencial-lineal',
+    loadChildren: () => import('./congruencial-lineal/congruencial-lineal.module').then( m => m.CongruencialLinealPageModule)
+  },
 ];
 
 @NgModule({

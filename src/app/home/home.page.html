@@ -1,20 +1,15 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-title>NUMEROS ALEATORIOS</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div class="background-overlay"></div>
+  <div class="container">
+    <div class="box" (click)="navigateTo('cuadrados-medios')">Cuadrados Medios</div>
+    <div class="box" (click)="navigateTo('productos-medios')">Productos Medios</div>
+    <div class="box" (click)="navigateTo('congruencial-multiplicativo')">Congruencial Multiplicativo</div>
+    <div class="box" (click)="navigateTo('congruencial-lineal')">Congruencial Lineal</div>
   </div>
 </ion-content>
